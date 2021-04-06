@@ -1,0 +1,13 @@
+.toolBarTitle {
+  width: 13rem;
+  height: 1.8rem;
+  margin: 1.7rem 0 0 1rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toolBarTitle img {
+  width: 13rem;
+  margin: 0 auto;
+  display: block;
+}
