@@ -1,0 +1,21 @@
+.baseButton {
+  outline: none;
+  width: 15rem;
+  height: 3.1rem;
+  background-color: rgb(255, 255, 255);
+  border: .1rem solid rgb(25, 82, 213);
+  color: rgb(25, 82, 213);
+  border-radius: .3rem;
+  margin: 0.9rem 0.5rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baseButton img {
+  height: 1.8rem;
+  padding-right: .5rem;
+}
