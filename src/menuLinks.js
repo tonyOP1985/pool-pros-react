@@ -25,8 +25,9 @@ const menuLinks =[
     menuTitle: 'Resources',
     id: 2,
     menuItems: [
-      'Frodo and Sam\'s Clean Pool Club',
-      'Shire Pools'
+      'Aqua\'s Water Purifying Solutions',
+      'Juvia Pools',
+      'Mercury Clean Pool Club',
     ]
   },
   {
