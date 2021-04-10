@@ -6,12 +6,14 @@ import BaseButton from '../Button/BaseButton';
 
 import styles from './ToolBar.module.css';
 
-const toolBar = () => (
-  <nav className={styles.toolBar}>
-    <ToolBarTitle />
-    <ToolBarMenu />
-    <BaseButton text="FIND A POOL PRO" />
-  </nav>
-);
+const toolBar = () => {
+  return (
+    <nav className={styles.toolBar}>
+      <ToolBarTitle />
+      <ToolBarMenu />
+      <BaseButton />
+    </nav>
+  )
+};
 
 export default toolBar;
