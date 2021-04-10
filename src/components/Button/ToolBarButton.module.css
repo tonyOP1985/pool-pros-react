@@ -1,4 +1,4 @@
-.baseButton {
+.toolBarButton {
   outline: none;
   width: 10rem;
   height: 3.1rem;
@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.baseButton img {
+.toolBarButton img {
   height: 1.8rem;
   padding-right: .5rem;
 }
@@ -29,7 +29,7 @@
 }
 
 @media (min-width: 768px) {
-  .baseButton {
+  .toolBarButton {
     margin: 0.9rem 0.5rem 0 0;
     width: 15rem;
   }
@@ -41,6 +41,5 @@
   .btnTextSmall {
     display: none;
   }
-  
 }
 
