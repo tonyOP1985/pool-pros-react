@@ -9,12 +9,12 @@ import styles from './ToolBar.module.css';
 
 const toolBar = () => {
   return (
-    <nav className={styles.toolBar}>
+    <header className={styles.toolBar}>
       <ToolBarTitle />
       <ToolBarMenu />
       <ToolBarButton />
       <NavDrawerActivator />
-    </nav>
+    </header>
   )
 };
 
