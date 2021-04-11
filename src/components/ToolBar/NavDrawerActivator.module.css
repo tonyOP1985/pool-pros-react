@@ -1,0 +1,15 @@
+.navDrawerActivator {
+  width: 5.5rem;
+  height: 5.5rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: .7rem .3rem 0 0;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navDrawerActivator {
+    display: none;
+  }
+}
