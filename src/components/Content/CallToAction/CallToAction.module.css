@@ -1,0 +1,17 @@
+.listItem {
+  display: inline-block;
+}
+
+
+.circlImg {
+  display: block;
+  width: 5rem;
+}
+
+
+/* medium */
+@media (min-width: 768px) {
+  .circlImg {
+    width: 6rem;
+  }
+}
