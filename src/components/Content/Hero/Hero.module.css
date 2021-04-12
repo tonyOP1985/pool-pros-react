@@ -1,0 +1,54 @@
+.jumbotron {
+  width: 100%;
+  height: 40rem;
+  background-image: url(../../../assests/images/Hero-image-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.jumbotronOverlay {
+  width: 100%;
+  height: 100%;
+  letter-spacing: .1rem;
+  position: relative;
+}
+
+/* small */
+@media (min-width: 578px) {
+  .jumbotron {
+    height: 35rem;
+  }
+
+  .jumbotronOverlay {
+    height: 35rem;
+  }
+}
+
+/* medium */
+@media (min-width: 768px) {
+  .jumbotron {
+    height: 35rem;
+    background-image: url(../../../assests/images/hero-image.png);
+  }
+
+  .jumbotronOverlay {
+    height: 34.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* xtra large */
+@media (min-width: 1400px) {
+  .jumbotron {
+    height: 45rem;
+  }
+
+  .jumbotronOverlay {
+    height: 44.35rem;
+  }
+}
+
