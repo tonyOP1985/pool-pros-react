@@ -17,14 +17,82 @@
   position: relative;
 }
 
+.jumbotronMessageMain {
+  top: 19%;
+  left: 12%;
+  width: 80%;
+  position: absolute;
+}
+
+.jumbotronMessageMain h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: $text-secondary;
+  text-align: center;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotronMessageTag {
+  width: 80%;
+  position: absolute;
+  top: 44%;
+  left: 12%;
+}
+
+.jumbotronMessageTag p {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgb(91, 184, 214);
+  text-align: center;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+.jumbotronMessageHR {
+  width: 80%;
+  position: absolute;
+  top: 58%;
+  left: 12%;
+}
+
+.jumbotronMessageHR hr {
+  width: 13rem;
+  margin: 0 auto;
+}
+
+.jumbotronMessageSub {
+  width: 75%;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+}
+
+.jumbotronMessageSub p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0;
+  font-family: $text-secondary;
+}
+
 /* small */
-@media (min-width: 578px) {
+@media (min-width: 588px) {
   .jumbotron {
     height: 35rem;
   }
 
   .jumbotronOverlay {
     height: 35rem;
+  }
+
+  .jumbotronMessageMain {
+    top: 26%;
+  }
+
+  .jumbotronMessageMain h1 {
+    font-size: 3rem;
   }
 }
 
@@ -38,6 +106,37 @@
   .jumbotronOverlay {
     height: 34.5rem;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .jumbotronMessageMain h1 {
+    font-size: 3rem;
+  }
+}
+
+/* large */
+@media (min-width: 1200px) {
+  .jumbotronMessageMain {
+    top: 23%;
+  }
+
+  .jumbotronMessageMain h1 {
+    font-size: 5rem;
+  }
+
+  .jumbotronMessageTag {
+    top: 45%;
+  }
+
+  .jumbotronMessageTag p {
+    font-size: 2rem;
+  }
+
+  .jumbotronMessageSub p {
+    font-size: 1.8rem;
+  }
+
+  .jumbotronMessageHR {
+    top: 60%;
   }
 }
 
