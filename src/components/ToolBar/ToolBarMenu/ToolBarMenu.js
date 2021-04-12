@@ -16,9 +16,9 @@ const toolBarMenu = () => {
   });
 
   return (
-    <div className={styles.toolBarMenu}>
+    <nav className={styles.toolBarMenu}>
       {menuItems}
-    </div>
+    </nav>
   );
 };
 
