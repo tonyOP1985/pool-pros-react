@@ -1,0 +1,49 @@
+.listItem {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.listItem:nth-child(1) .actionText p {
+  width: 17rem;
+}
+
+.listItem:nth-child(3) .actionText p {
+  width: 16rem;
+}
+
+.circlImg {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+}
+
+.actionText {
+  padding: 0 0 0 1rem;
+}
+
+.actionText h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(11, 59, 170);
+  text-transform: uppercase;
+}
+
+.actionText p {
+  color: #9fa6a7;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-top: .4rem;
+  width: 19.6rem;
+}
+
+/* medium */
+@media (min-width: 768px) {
+  .circlImg {
+    width: 6rem;
+    height: 6rem
+  }
+
+  .listItem {
+    padding-top: 1.5rem;
+  }
+}

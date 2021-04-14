@@ -1,0 +1,29 @@
+.steps {
+  width: 26.6rem;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* medium */
+@media (min-width: 768px) {
+  .steps {
+    width: 100%;
+  }
+
+  .step {
+    flex-direction: row;
+    padding: 2rem 1rem 0 1rem;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  .steps {
+    width: 992px;
+  }
+}
