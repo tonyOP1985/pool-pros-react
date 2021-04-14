@@ -12,7 +12,7 @@ const callToAction = (props) => {
         src={`/images/${image}`}
         alt={`Step-${index + 1}`}
       />
-      <div>
+      <div className={styles.actionText} >
         <h1>{ action }</h1>
         <p>{ text }</p>
       </div>
