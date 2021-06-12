@@ -1,0 +1,97 @@
+.input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 5rem;
+  padding-left: 1.5rem;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 90%;
+  height: 2.5rem;
+  z-index: 1;
+}
+
+.inputSpan {
+  display: block;
+  position: relative;
+  border-radius: .4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: rgb(25, 82, 213);
+  border: 0.1rem solid #c4c9c9;
+}
+
+.inputSpan::before {
+  content: "";
+  position: absolute;
+  border-radius: .2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 0;
+  left: 0;
+  background-color: #eaecec;
+}
+
+.label {
+  display: block;
+  width: 12rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.checkbox::checked + .inputSpan::before {
+  width: .8rem;
+  height: .8rem;
+  top: .8rem;
+  left: .8rem;
+  border-radius: 0;
+  transition: .2s ease-in-out;
+  background-color: #eaecec;
+}
+
+.checkbox::not(:checked) + .inputSpan::before {
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 0;
+  left: 0;
+  border-radius: .2rem;
+  transition: .2s ease-in-out;
+  background-color: #d7e0e1;
+}
+
+@media (min-width: 768px) {
+  .input {
+    display: inline-block;
+    height: 4rem;
+    width: 13rem;
+    padding: 2.3rem 0 0 0;
+  }
+
+  .checkbox {
+    width: 80%;
+  }
+
+  .inputSpan {
+    display: inline-block;
+  }
+
+  .inputSpan::before {
+    background-color: white;
+  }
+
+  .label {
+    position: absolute;
+    display: inline-block;
+    width: 8rem;
+    font-size: 1.2rem;
+    margin-top: .6rem;
+  }
+
+  .checkbox::not(:checked) + .inputSpan::before {
+    background-color: #eaecec;
+  }
+}

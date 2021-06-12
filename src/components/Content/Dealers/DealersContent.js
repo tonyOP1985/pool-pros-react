@@ -8,6 +8,8 @@ import styles from './DealersContent.module.css';
 
 const DealerContent = () => {
   const [checkedOptions, setCheckedOptions] = useState([]);
+  const options = ['Service', 'Installation', 'Residential', 'Commercial'];
+  
   console.log(dealers.dealers);
   const addCheckedOptions = (option) => {
     if (checkedOptions.includes(option)) {
@@ -32,7 +34,7 @@ const DealerContent = () => {
 
   return (
     <section className={styles.dealerContent}>
-      <FilterBar dealersLen={filteredDealersLenght} />
+      <FilterBar dealersLen={filteredDealersLenght} options={options} />
     </section>
   );
 };
