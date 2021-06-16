@@ -7,34 +7,37 @@ import FilterBar from './FilterBar/FilterBar';
 import styles from './DealersContent.module.css';
 
 const DealerContent = () => {
-  const [checkedOptions, setCheckedOptions] = useState([]);
-  const options = ['Service', 'Installation', 'Residential', 'Commercial'];
-  
-  console.log(dealers.dealers);
-  const addCheckedOptions = (option) => {
-    if (checkedOptions.includes(option)) {
-      const index = checkedOptions.indexOf(option);
-      const updatedOptions = checkedOptions.splice(index, 1);
-      setCheckedOptions(updatedOptions);
-      return;
-    }
+  const [options, setOptions] = useState([
+    { name: 'service', label: 'Service', isActive: false },
+    { name: 'installation', label: 'Installation', isActive: false },
+    { name: 'residential', label: 'Residential', isActive: false },
+    { name: 'commercial', label: 'Commercial', isActive: false },
+  ]);
 
-    setCheckedOptions([...checkedOptions, option]);
-  };
+  const filteredDealers = () => {
+    const checkedOptions = options.filter(({ isActive }) => isActive);
 
-  const filteredDealers = (options) => {
     if (!checkedOptions.length) return dealers.dealers;
 
     return dealers.dealers.filter((pro) => {
-      return checkedOptions.every(item => pro.data.certifications.includes(item));
+      return checkedOptions.every(({ label }) => pro.data.certifications.includes(`${label} Pro`));
     });
   };
 
-  const filteredDealersLenght = filteredDealers().length;
+  const filteredDealersLength = filteredDealers().length;
+
+  const handleInputChange = (event) => {
+    const { name } = event.target;
+
+    const idx = options.findIndex(opt => opt.name === name);
+    setOptions(options.map((option, index) => {
+      return index === idx ? { ...option, isActive: !option.isActive } : option;
+    }));
+  };
 
   return (
     <section className={styles.dealerContent}>
-      <FilterBar dealersLen={filteredDealersLenght} options={options} />
+      <FilterBar dealersLen={filteredDealersLength} options={options} changeHandler={handleInputChange} />
     </section>
   );
 };

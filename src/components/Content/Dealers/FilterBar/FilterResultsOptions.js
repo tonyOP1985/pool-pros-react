@@ -5,9 +5,9 @@ import Input from './Input';
 import styles from './FilterResultsOptions.module.css';
 
 const filterResultsOptions = (props) => {
-  const { options } = props;
+  const { options, changeHandler } = props;
 
-  const optionInputs = options.map(option => <Input option={option} key={option} />);
+  const optionInputs = options.map(option => <Input option={option} key={option.name} changeHandler={changeHandler} />);
 
   return (
     <div className={styles.filterResultsOptions}>
