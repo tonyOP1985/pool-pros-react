@@ -8,7 +8,7 @@ const input = (props) => {
   return (
     <div className={styles.input}>
       <input
-      className={styles.checkbox}
+        className={styles.checkbox}
         type="checkbox"
         name={option.name}
         defaultChecked={option.isActive}

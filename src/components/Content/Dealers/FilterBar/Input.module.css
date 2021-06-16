@@ -6,7 +6,7 @@
   padding-left: 1.5rem;
 }
 
-.checkbox {
+.checkbox[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -25,7 +25,7 @@
   border: 0.1rem solid #c4c9c9;
 }
 
-.inputSpan::before {
+.inputSpan:before {
   content: "";
   position: absolute;
   border-radius: .2rem;
@@ -43,7 +43,7 @@
   padding-left: 1rem;
 }
 
-.checkbox::checked + .inputSpan::before {
+.checkbox[type="checkbox"]:checked + .inputSpan:before {
   width: .8rem;
   height: .8rem;
   top: .8rem;
@@ -53,14 +53,14 @@
   background-color: #eaecec;
 }
 
-.checkbox::not(:checked) + .inputSpan::before {
+.checkbox[type="checkbox"]:not(:checked) + .inputSpan:before {
   width: 2.4rem;
   height: 2.4rem;
   top: 0;
   left: 0;
   border-radius: .2rem;
   transition: .2s ease-in-out;
-  background-color: #d7e0e1;
+  background-color: #eaecec;
 }
 
 @media (min-width: 768px) {
@@ -71,7 +71,7 @@
     padding: 2.3rem 0 0 0;
   }
 
-  .checkbox {
+  .checkbox[type="checkbox"] {
     width: 80%;
   }
 
@@ -79,7 +79,7 @@
     display: inline-block;
   }
 
-  .inputSpan::before {
+  .inputSpan:before {
     background-color: white;
   }
 
@@ -91,7 +91,7 @@
     margin-top: .6rem;
   }
 
-  .checkbox::not(:checked) + .inputSpan::before {
-    background-color: #eaecec;
+  .checkbox[type="checkbox"]:not(:checked) + .inputSpan::before {
+    background-color: white;
   }
 }
