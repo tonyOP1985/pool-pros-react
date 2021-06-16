@@ -10,7 +10,7 @@
   .filterResultsOptions {
     display: flex;
     align-items: center;
-    /* display: block; */
+    display: block;
     position: relative;
     opacity: 1;
     transform: none;
