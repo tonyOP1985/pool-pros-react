@@ -12,8 +12,8 @@
 
 @media (min-width: 768px) {
   .filterResultsOptions {
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
     position: relative;
     opacity: 1;
     transform: none;
