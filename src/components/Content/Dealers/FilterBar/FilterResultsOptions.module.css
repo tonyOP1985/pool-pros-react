@@ -1,16 +1,19 @@
 .filterResultsOptions {
   display: none;
-  width: 27.3rem;
+  width: 26.5rem;
   height: 20rem;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
 }
 
+.showOptions {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .filterResultsOptions {
-    display: flex;
-    align-items: center;
-    display: block;
+    /* display: flex;
+    align-items: center; */
     position: relative;
     opacity: 1;
     transform: none;

@@ -14,6 +14,8 @@ const DealerContent = () => {
     { name: 'commercial', label: 'Commercial', isActive: false },
   ]);
 
+  const [showOptions, setShowOptions] = useState(false);
+
   const filteredDealers = () => {
     const checkedOptions = options.filter(({ isActive }) => isActive);
 
@@ -35,9 +37,20 @@ const DealerContent = () => {
     }));
   };
 
+  const toggleShowOptions = (event) => {
+    const toggleState = !showOptions;
+    setShowOptions(toggleState);
+  };
+
   return (
     <section className={styles.dealerContent}>
-      <FilterBar dealersLen={filteredDealersLength} options={options} changeHandler={handleInputChange} />
+      <FilterBar
+        dealersLen={filteredDealersLength}
+        options={options}
+        changeHandler={handleInputChange} 
+        toggleShowOptions={toggleShowOptions}
+        showOptions={showOptions}
+      />
     </section>
   );
 };

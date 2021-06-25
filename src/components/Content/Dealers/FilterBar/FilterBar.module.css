@@ -4,21 +4,33 @@
   margin: 0;
   z-index: 0;
   background-color: #eaecec;
-  display: none;
+}
+
+.addHeight {
+  height: 30rem;
 }
 
 .filterResultsText {
-  width: 27.3rem;
   height: 6rem;
   margin: 0;
   display: flex;
   align-items: center;
 }
 
-.filterResultsText h1:nth-child(1) {
+.large {
+  display: none
+}
+
+.small {
+  display: flex;
+  justify-content: center;
+}
+
+.filterResultsTextNumber {
   width: 8rem;
   height: 2rem;
-  margin-top: 2.7rem;
+  margin-top: 1.7rem;
+  padding: 0 1.8rem 0 0;
   color: rgb(25, 82, 213);
   font-size: 1.7rem;
   text-align: center;
@@ -26,15 +38,41 @@
   align-items: center;
 }
 
-.filterResultsText h1:nth-child(2) {
-  width: 10rem;
-  height: 2rem;
-  margin-top: .5rem;
-  padding-left: 2rem;
-  font-size: 1.4rem;
+.filterResultsTextTitle {
+  width: 12rem;
+  text-align: right;
+}
+
+.filterButton {
+  width: 16.4rem;
+  height: 4rem;
+  margin-top: 1.8rem;
+  display: block;
+  border: .1rem solid #d7e0e1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
+.filterButton h4 {
+  font-size: 1.5rem;
+  width: 12rem;
+  height: 4rem;
+  float: left;
+  color: rgb(0, 0, 0);
+  margin-top: 1.2rem;
+}
+
+.filterIcon {
+  float: right;
+  display: block;
+  width: 4rem;
+  height: 3rem;
+  border-left: .1rem solid #d7e0e1;
+  padding-top: 1rem;
+  background-color: #eaecec;
   text-align: center;
-  display: flex;
-  align-items: center;
 }
 
 /* medium */
@@ -51,13 +89,19 @@
     width: auto;
     height: auto;
     margin: 0;
-    
+    justify-content: space-between;
+    display: flex;
   }
 
-  .filterResultsText h1:nth-child(1) {
+  .small {
+    display: none;
+  }
+
+  .filterResultsTextNumber {
     width: 10rem;
     height: 4rem;
     margin-top: 0;
+    padding: 0;
     font-size: 1.8rem;
     border-right: .1rem solid #d7e0e1;
     display: flex;
