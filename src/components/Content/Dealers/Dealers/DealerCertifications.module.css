@@ -1,0 +1,30 @@
+.dealerCertifications {
+  width: 100%;
+  height: 7rem;
+  background-color: #eaecec;
+  margin-top: 2rem;
+}
+
+.dealerCertifications ul {
+  width: 80%;
+  height: 4rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.dealerCertifications li {
+  display: inline-block;
+  position: relative;
+  width: 10rem;
+  height: 2rem;
+  padding-left: 2rem;
+}
+
+.dealerCertifications li span {
+  padding: 0 0.3rem;
+}
+
+.dealerCertifications li img {
+  display: inline-block;
+  height: 1rem;
+}

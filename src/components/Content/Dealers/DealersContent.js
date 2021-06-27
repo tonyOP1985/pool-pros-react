@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import dealers from './../../../dealers.json';
 
 import FilterBar from './FilterBar/FilterBar';
+import Dealers from './Dealers/Dealers';
 
 import styles from './DealersContent.module.css';
 
@@ -27,6 +28,7 @@ const DealerContent = () => {
   };
 
   const filteredDealersLength = filteredDealers().length;
+  const filteredDealersList = filteredDealers();
 
   const handleInputChange = (event) => {
     const { name } = event.target;
@@ -51,6 +53,7 @@ const DealerContent = () => {
         toggleShowOptions={toggleShowOptions}
         showOptions={showOptions}
       />
+      <Dealers dealers={filteredDealersList} />
     </section>
   );
 };
