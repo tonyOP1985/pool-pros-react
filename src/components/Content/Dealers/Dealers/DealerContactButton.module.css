@@ -1,0 +1,43 @@
+.dealerContactButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.dealerContactButton p {
+  width: 100%;
+  text-align: center;
+  font-size: .9rem;
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+.dealerContactButton button {
+  position: relative;
+  display: block;
+  width: 17rem;
+  height: 3.5rem;
+  border: .1rem solid #9fa6a7;
+  border-radius: .3rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.dealerContactButton img {
+  display:inline-block;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.8rem;
+  height: 1.2rem;
+}
+
+.dealerContactButton span {
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 3.5rem;
+  width: 12rem;
+  font-size: 1.4rem;
+  color: rgb(11, 59, 170);
+  font-weight: 600;
+}

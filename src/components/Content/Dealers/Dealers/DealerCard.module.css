@@ -1,0 +1,48 @@
+.dealerCard {
+  width: 30rem;
+  margin: 2rem auto;
+  padding-top: 2rem;
+  border: .1rem solid #d7e0e1;
+  border-radius: .4rem;
+}
+
+.dealerCardHeader {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.dealerCard hr {
+  display: none;
+}
+
+/* medium */
+@media (min-width: 768px) {
+  .dealerCard {
+    border-radius: .6rem;
+    margin: 2rem auto;
+    display: inline-block;
+    box-shadow: 0 3px 10px -1px #9fa6a7;
+  }
+
+  .dealerCard hr {
+    display: block;
+    height: .1rem;
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #eaecec;
+    margin: 0 auto 2rem auto;
+    padding: 0;
+  }
+}
+
+/* large */
+@media (min-width: 992px) {
+  .dealerCard {
+    margin: 2rem 0 2rem 2.4rem;
+  }
+}

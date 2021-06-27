@@ -1,0 +1,21 @@
+.dealerBusinessHours {
+  padding-top: 2rem;
+}
+
+.dealerBusinessHours h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.dealerBusinessHours ul {
+  width: 100%;
+}
+
+.dealerBusinessHours ul li {
+  width: 50%;
+  margin: .5rem auto 0  auto;
+  list-style: none;
+  text-align: center;
+}
