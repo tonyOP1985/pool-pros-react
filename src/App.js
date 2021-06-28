@@ -3,6 +3,7 @@ import ToolBar from './components/ToolBar/ToolBar';
 import Body from './components/Content/Body';
 import WaterImg from './components/Content/WaterImg/WaterImg';
 import DealersContent from './components/Content/Dealers/DealersContent';
+import Footer from './components/Footer/Footer';
 
 import './App.css';
 
@@ -14,6 +15,7 @@ const App = () => {
       <Body />
       <WaterImg />
       <DealersContent />
+      <Footer />
     </div>
   );
 }
