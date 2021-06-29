@@ -1,0 +1,131 @@
+.bottomFooter {
+  height: 8rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(63, 111, 221);
+  color: #eaecec;
+  font-size: .9rem;
+}
+
+.bottomFooterCommercial {
+  height: 4rem;
+  width: 30rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottomFooterCommercial:before {
+  content: "";
+  position: absolute;
+  height: .1rem;
+  width: 90%;
+  bottom: 0;
+  left: 1.3rem;
+  border-bottom: .1rem solid #eaecec;
+}
+
+/* md */
+@media (min-width: 768px) {
+  .bottomFooterCommercial {
+    display: none;
+  }
+}
+
+/* custom breakpoint for .socialMedia */
+@media (min-width: 380px) {
+  .bottomFooterCommercial {
+    width: 30rem;
+    margin: 0 auto;
+  }
+}
+
+.bottomFooterCommercial ul {
+  display: block;
+  height: 2rem;
+  width: 25rem;
+}
+
+.bottomFooterCommercial ul li {
+  height: 2rem;
+  list-style: none;
+  display: inline-block;
+}
+
+.bottomFooterCommercial ul li:nth-child(2)::before {
+  content: "|";
+  padding: 0 1.2rem 0 1rem;
+}
+
+.bottomFooterCommercial ul li a {
+  display: inline-block;
+  height: 2rem;
+  text-decoration: none;
+  color: #eaecec;
+  padding-top: .5rem;
+  position: relative;
+}
+
+.bottomFooterCommercial ul li a:hover {
+  text-decoration: underline;
+}
+
+.bottomFooterCommercial ul li a img {
+  display: inline-block;
+  height: 1.1rem;
+  width: 1.1rem;
+  position: absolute;
+  top: .5rem;
+  left: 10rem;
+}
+
+.bottomFooterLinks {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bottomFooterLinks ul {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2rem;
+}
+
+.bottomFooterLinks ul li {
+  list-style: none;
+  width: 8rem;
+}
+
+.bottomFooterLinks ul li:first-child::after {
+  content: "";
+  padding-left: 1.8%;
+}
+
+.bottomFooterLinks ul li:nth-child(2)::before {
+  content: "|";
+  padding: 0 .7rem;
+}
+
+.bottomFooterLinks ul li:nth-child(3)::before {
+  content: "|";
+  padding: 0 .7rem;
+}
+
+.bottomFooterLinks ul li:last-child {
+  width: 11.5rem;
+}
+
+.bottomFooterLinks ul li a {
+  text-decoration: none;
+  color: #eaecec;
+}
+
+.bottomFooterLinks ul li a:hover {
+  text-decoration: underline;
+}
