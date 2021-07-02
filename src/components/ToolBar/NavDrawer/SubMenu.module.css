@@ -1,0 +1,105 @@
+.navMenuItemSm {
+  width: 25rem;
+  height: 4rem;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navMenuItemSm:hover {
+  background-color: #eaecec;
+}
+
+.navMenuItemLink {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgb(25, 82, 213);
+  background: url(../../../assests/images/next-arrow.png) no-repeat right;
+  background-size: .8rem;
+  width: 80%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navSubmenuSm {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  padding-top: 2rem;
+  transition: 0.5s;
+}
+
+.navSubmenuSm li {
+  width: 25rem;
+  height: 4rem;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.subNavClose {
+  height: 3.3rem;
+  margin-bottom: .5rem;
+}
+
+.subNavClose li {
+  width: 25rem;
+  height: 3.3rem;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: #9fa6a7;
+  list-style: none;
+  cursor: pointer;
+  border-bottom: .1rem solid #d7e0e1;
+}
+
+.subNavClose span {
+  font-size: 2rem;
+  color: #9fa6a7;
+  display: inline-block;
+  padding: 0 2rem 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.subNavClose h4 {
+  width: 16rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(25, 82, 213);
+  padding-bottom: 0.5rem;
+}
+
+.navSubItem {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(25, 82, 213);
+  width: 25rem;
+  height: 4rem;
+  display: block;
+  margin: 0 auto;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.navSubItem:hover {
+  background-color: #eaecec;
+}
+
+.openSubMenu {
+  width: 25rem;
+}
