@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Hero.module.css';
 
 const hero = () => (
-  <section className={styles.jumbotron} >
+  <section className={styles.jumbotron}>
     <div className={styles.jumbotronOverlay}>
       <div className={styles.jumbotronMessageMain}>
         <h1>Is your pool ready for Summer?</h1>

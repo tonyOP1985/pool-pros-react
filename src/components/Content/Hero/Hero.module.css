@@ -28,7 +28,6 @@
   color: #fff;
   font-size: 2.5rem;
   font-weight: 300;
-  font-family: $text-secondary;
   text-align: center;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
@@ -74,7 +73,6 @@
   color: #fff;
   text-align: center;
   letter-spacing: 0;
-  font-family: $text-secondary;
 }
 
 /* small */
@@ -104,7 +102,9 @@
   }
 
   .jumbotronOverlay {
-    height: 34.5rem;
+    height: 34.45rem;
+    margin-top: 0.05rem;
+    margin-top: 0.1rem; */
     background-color: rgba(0, 0, 0, 0.3);
   }
 
@@ -114,7 +114,7 @@
 }
 
 /* large */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) { 
   .jumbotronMessageMain {
     top: 23%;
   }
@@ -143,7 +143,7 @@
 /* xtra large */
 @media (min-width: 1400px) {
   .jumbotron {
-    height: 45rem;
+    height: 44.8rem
   }
 
   .jumbotronOverlay {
