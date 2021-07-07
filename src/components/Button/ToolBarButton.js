@@ -22,15 +22,6 @@ const baseButton = () => {
       <span className={styles.btnTextLarge} >{largeBtnText}</span>
       <span className={styles.btnTextSmall} >{smallBtnText}</span>
     </Link>
-    // <button className={styles.toolBarButton}>
-    //   <img
-    //     src="images/location-icon.png"
-    //     alt={largeBtnText}
-    //     title={largeBtnText}
-    //   />
-    //   <span className={styles.btnTextLarge} >{largeBtnText}</span>
-    //   <span className={styles.btnTextSmall} >{smallBtnText}</span>
-    // </button>
   );
 };
 
