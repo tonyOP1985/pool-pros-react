@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import styles from './ToolBarButton.module.css';
 
@@ -7,7 +8,12 @@ const baseButton = () => {
   const smallBtnText  = 'Find a Pro';
 
   return (
-    <button className={styles.toolBarButton}>
+    <Link
+      to="filterBar"
+      smooth={true}
+      duration={500}
+      className={styles.toolBarButton}
+    >
       <img
         src="images/location-icon.png"
         alt={largeBtnText}
@@ -15,7 +21,16 @@ const baseButton = () => {
       />
       <span className={styles.btnTextLarge} >{largeBtnText}</span>
       <span className={styles.btnTextSmall} >{smallBtnText}</span>
-    </button>
+    </Link>
+    // <button className={styles.toolBarButton}>
+    //   <img
+    //     src="images/location-icon.png"
+    //     alt={largeBtnText}
+    //     title={largeBtnText}
+    //   />
+    //   <span className={styles.btnTextLarge} >{largeBtnText}</span>
+    //   <span className={styles.btnTextSmall} >{smallBtnText}</span>
+    // </button>
   );
 };
 

@@ -12,7 +12,7 @@ const filterBar = (props) => {
   const filterResultsClasses = showOptions ? `${styles.filterResultsContainer} ${styles.addHeight}` : `${styles.filterResultsContainer}`;
 
   return (
-    <div className={filterResultsClasses}>
+    <div id="filterBar" className={filterResultsClasses}>
       <div className={`${styles.filterResultsText} ${styles.large}`}>
         <h1 className={styles.filterResultsTextNumber}>
           { dealersLen } { text }
