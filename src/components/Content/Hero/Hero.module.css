@@ -11,8 +11,6 @@
 }
 
 .jumbotronOverlay {
-  width: 100%;
-  height: 100%;
   letter-spacing: .1rem;
   position: relative;
 }
@@ -102,10 +100,9 @@
   }
 
   .jumbotronOverlay {
-    height: 34.45rem;
+    height: 34rem;
     margin-top: 0.05rem;
     margin-top: 0.1rem;
-    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .jumbotronMessageMain h1 {
@@ -144,10 +141,6 @@
 @media (min-width: 1400px) {
   .jumbotron {
     height: 44.8rem
-  }
-
-  .jumbotronOverlay {
-    height: 44.35rem;
   }
 }
 
