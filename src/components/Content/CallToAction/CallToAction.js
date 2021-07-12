@@ -9,7 +9,7 @@ const callToAction = (props) => {
     <li className={styles.listItem}>
       <img
         className={styles.circlImg}
-        src={`/images/${image}`}
+        src={`./images/${image}`}
         alt={`Step-${index + 1}`}
       />
       <div className={styles.actionText} >

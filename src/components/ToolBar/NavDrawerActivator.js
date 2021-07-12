@@ -8,7 +8,7 @@ const navDrawerActivator = (props) => {
   return (
     <img
       className={styles.navDrawerActivator}
-      src="/images/menu-icon-mobile.png"
+      src="./images/menu-icon-mobile.png"
       alt="Menu-Icon"
       onClick={() => clickHandler(true)}
     />

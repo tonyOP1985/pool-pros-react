@@ -27,7 +27,7 @@ const bottomFooter = () => {
           <li>
             <a href="_blank">
               Commercial Service
-              <img src="/images/action-commercial-icon.png" alt="Commerical Login" title="Commerical Login" />
+              <img src="./images/action-commercial-icon.png" alt="Commerical Login" title="Commerical Login" />
             </a>
           </li>
         </ul>

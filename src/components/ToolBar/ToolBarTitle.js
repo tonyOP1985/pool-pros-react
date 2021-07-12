@@ -4,7 +4,7 @@ import styles from './ToolBarTitle.module.css';
 
 const toolBarTitle = () => (
   <img
-    src="/images/pool-pros-logo.png"
+    src="./images/pool-pros-logo.png"
     alt="Pool Pros"
     title="POOL PROS"
     className={styles.toolBarTitle}

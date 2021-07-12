@@ -12,7 +12,7 @@ const toolBarMenuItem = (props) => {
       <button className={styles.toolBarMenuButton}>
         <span>{link.menuTitle}</span>
         <img
-          src="images/down-arrow.png"
+          src="./images/down-arrow.png"
           alt={link.menuTitle}
           title={link.menuTitle}
           height="12"

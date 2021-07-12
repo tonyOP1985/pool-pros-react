@@ -5,9 +5,9 @@ import styles from './TopFooter.module.css';
 const topFooter = () => {
 
   const socialMediaIconsData = [
-    { text: 'Facebook', src: '/images/facebook-icon.png', className: 'facebook' },
-    { text: 'Twitter', src: '/images/twitter-icon.png', className: 'twitter' },
-    { text: 'YouTube', src: '/images/youtube-icon.png', className: 'youtube' },
+    { text: 'Facebook', src: './images/facebook-icon.png', className: 'facebook' },
+    { text: 'Twitter', src: './images/twitter-icon.png', className: 'twitter' },
+    { text: 'YouTube', src: './images/youtube-icon.png', className: 'youtube' },
   ];
 
   const socialMediaIcons = socialMediaIconsData.map(icon => {
@@ -21,7 +21,7 @@ const topFooter = () => {
   return (
     <div className={styles.topFooter}>
       <div className={styles.logo}>
-        <img src="/images/pool-pros-logo-footer.png" alt="Pool Pros" title="Pool Pros" />
+        <img src="./images/pool-pros-logo-footer.png" alt="Pool Pros" title="Pool Pros" />
       </div>
       <div className={styles.socialMedia}>
         <h1>Connect with us</h1>

@@ -15,7 +15,7 @@ const baseButton = () => {
       className={styles.toolBarButton}
     >
       <img
-        src="images/location-icon.png"
+        src="./images/location-icon.png"
         alt={largeBtnText}
         title={largeBtnText}
       />

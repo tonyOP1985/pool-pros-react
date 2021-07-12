@@ -15,7 +15,7 @@ const dealerCertifications = (props) => {
   const addCertImage = (cert) => {
     let newStr = (cert.replace(/pro/i, '')).trim();
     let imageUrl = certImage.find(i => newStr === i.name).image;
-    return `/images/${imageUrl}`;
+    return `./images/${imageUrl}`;
   };
 
   const certs = dealer.certifications.map((cert, index) => {
