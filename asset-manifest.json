@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pool-pros-react/static/css/main.7c2df311.chunk.css",
+    "main.js": "/pool-pros-react/static/js/main.24bf8615.chunk.js",
+    "main.js.map": "/pool-pros-react/static/js/main.24bf8615.chunk.js.map",
+    "runtime-main.js": "/pool-pros-react/static/js/runtime-main.a99993f1.js",
+    "runtime-main.js.map": "/pool-pros-react/static/js/runtime-main.a99993f1.js.map",
+    "static/js/2.f03805bb.chunk.js": "/pool-pros-react/static/js/2.f03805bb.chunk.js",
+    "static/js/2.f03805bb.chunk.js.map": "/pool-pros-react/static/js/2.f03805bb.chunk.js.map",
+    "static/js/3.930e6e05.chunk.js": "/pool-pros-react/static/js/3.930e6e05.chunk.js",
+    "static/js/3.930e6e05.chunk.js.map": "/pool-pros-react/static/js/3.930e6e05.chunk.js.map",
+    "index.html": "/pool-pros-react/index.html",
+    "static/css/main.7c2df311.chunk.css.map": "/pool-pros-react/static/css/main.7c2df311.chunk.css.map",
+    "static/js/2.f03805bb.chunk.js.LICENSE.txt": "/pool-pros-react/static/js/2.f03805bb.chunk.js.LICENSE.txt",
+    "static/media/Hero.module.css": "/pool-pros-react/static/media/hero-image.7ea5a6a0.png",
+    "static/media/WaterImg.module.css": "/pool-pros-react/static/media/water-image.a126fb26.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a99993f1.js",
+    "static/js/2.f03805bb.chunk.js",
+    "static/css/main.7c2df311.chunk.css",
+    "static/js/main.24bf8615.chunk.js"
+  ]
+}
